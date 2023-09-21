@@ -542,6 +542,10 @@ video {
   position: relative;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -588,6 +592,10 @@ video {
   margin-top: 3rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -609,6 +617,18 @@ video {
   height: fit-content;
 }
 
+.h-\[278px\] {
+  height: 278px;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -623,6 +643,10 @@ video {
 
 .w-9 {
   width: 2.25rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .min-w-full {
@@ -665,6 +689,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-\[8px\] {
+  border-radius: 8px;
+}
+
 .border {
   border-width: 1px;
 }
@@ -689,8 +717,25 @@ video {
   background-color: hsl(216 50% 16% / var(--tw-bg-opacity));
 }
 
+.bg-cyan {
+  --tw-bg-opacity: 1;
+  background-color: hsl(178 100% 50% / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\/images\/image-equilibrium\.jpg\'\)\] {
   background-image: url('/images/image-equilibrium.jpg');
+}
+
+.bg-\[url\(\'\.\/images\/image-equilibrium\.jpg\'\)\] {
+  background-image: url('./images/image-equilibrium.jpg');
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .px-7 {
@@ -764,9 +809,21 @@ video {
   opacity: 0.1;
 }
 
+.hover\:flex:hover {
+  display: flex;
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
 .hover\:bg-cyan:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(178 100% 50% / var(--tw-bg-opacity));
+}
+
+.hover\:bg-cyan\/50:hover {
+  background-color: hsl(178 100% 50% / 0.5);
 }
 
 .hover\:text-cyan:hover {
@@ -780,4 +837,14 @@ video {
 
 .hover\:opacity-50:hover {
   opacity: 0.5;
+}
+
+.hover\:opacity-40:hover {
+  opacity: 0.4;
+}
+
+@media (min-width: 768px) {
+  .md\:h-\[302px\] {
+    height: 302px;
+  }
 }
