@@ -27,13 +27,41 @@
     <article
       class="max-w-sm flex-col bg-very-dark-blue-card relative px-7 h-fit mt-12 mb-12 rounded-2xl"
     >
+    <!-- 
+        - use img_container class
+        - use custom css to display overlay on hover (in input.css)
+    -->
       <div
-        class="relative flex cursor-pointer justify-center items-center h-fit my-6"
+        class="img_container relative flex cursor-pointer justify-center items-center h-fit my-6"
       >
+
+      <!-- 
+        - making overlay with view icon 
+        - bg-transparent-cyan is a custom color from tailwind.config.js 
+        - that gets its value from css variable in input.css
+      -->
+        <div
+          class="overlay absolute pointer-events-none top-0 hidden left-0 w-full h-full bg-transparent-cyan rounded-xl"
+        >
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          >
+            <img
+              src="./images/icon-view.svg"
+              alt="view icon"
+              class="w-12"
+            />
+          </div>
+      </div>
+
+      <!-- 
+        - we don't need any pointer events on this image 
+        - using pointer-events-none class
+      -->
         <img
           src="./images/image-equilibrium.jpg"
           alt="Nft picture"
-          class="rounded-xl"
+          class="rounded-xl pointer-events-none"
         />
       </div>
 
