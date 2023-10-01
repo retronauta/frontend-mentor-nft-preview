@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* make a variable to store cyan color with 50% opacity */
+:root {
+    --transparent-cyan: hsla(178, 100%, 50%, 0.50);
+}
+
+/* make image overlay visible on hovering its parent div */
+.img_container:hover .overlay {
+    display: block;
+}

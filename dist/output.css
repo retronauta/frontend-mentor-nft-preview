@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -31,7 +31,6 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
-6. Use the user's configured `sans` font-variation-settings by default.
 */
 
 html {
@@ -48,8 +47,6 @@ html {
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
-  font-variation-settings: normal;
-  /* 6 */
 }
 
 /*
@@ -190,10 +187,6 @@ optgroup,
 select,
 textarea {
   font-family: inherit;
-  /* 1 */
-  font-feature-settings: inherit;
-  /* 1 */
-  font-variation-settings: inherit;
   /* 1 */
   font-size: 100%;
   /* 1 */
@@ -346,14 +339,6 @@ menu {
 }
 
 /*
-Reset default styling for dialogs.
-*/
-
-dialog {
-  padding: 0;
-}
-
-/*
 Prevent resizing textareas horizontally by default.
 */
 
@@ -448,9 +433,6 @@ video {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -498,9 +480,6 @@ video {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -534,6 +513,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 .absolute {
   position: absolute;
 }
@@ -542,16 +525,20 @@ video {
   position: relative;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
 .top-0 {
   top: 0px;
 }
 
-.z-0 {
-  z-index: 0;
-}
-
-.z-10 {
-  z-index: 10;
+.top-1\/2 {
+  top: 50%;
 }
 
 .my-4 {
@@ -592,16 +579,16 @@ video {
   margin-top: 3rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
 .inline-block {
   display: inline-block;
 }
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-0 {
@@ -617,28 +604,16 @@ video {
   height: fit-content;
 }
 
-.h-\[278px\] {
-  height: 278px;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
 .h-full {
   height: 100%;
-}
-
-.min-h-full {
-  min-height: 100%;
 }
 
 .min-h-screen {
   min-height: 100vh;
 }
 
-.w-16 {
-  width: 4rem;
+.w-12 {
+  width: 3rem;
 }
 
 .w-9 {
@@ -649,12 +624,22 @@ video {
   width: 100%;
 }
 
-.min-w-full {
-  min-width: 100%;
-}
-
 .max-w-sm {
   max-width: 24rem;
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -689,10 +674,6 @@ video {
   border-radius: 0.75rem;
 }
 
-.rounded-\[8px\] {
-  border-radius: 8px;
-}
-
 .border {
   border-width: 1px;
 }
@@ -707,6 +688,10 @@ video {
   background-color: hsl(215 51% 70% / var(--tw-bg-opacity));
 }
 
+.bg-transparent-cyan {
+  background-color: var(--transparent-cyan);
+}
+
 .bg-very-dark-blue {
   --tw-bg-opacity: 1;
   background-color: hsl(217 54% 11% / var(--tw-bg-opacity));
@@ -715,27 +700,6 @@ video {
 .bg-very-dark-blue-card {
   --tw-bg-opacity: 1;
   background-color: hsl(216 50% 16% / var(--tw-bg-opacity));
-}
-
-.bg-cyan {
-  --tw-bg-opacity: 1;
-  background-color: hsl(178 100% 50% / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'\/images\/image-equilibrium\.jpg\'\)\] {
-  background-image: url('/images/image-equilibrium.jpg');
-}
-
-.bg-\[url\(\'\.\/images\/image-equilibrium\.jpg\'\)\] {
-  background-image: url('./images/image-equilibrium.jpg');
-}
-
-.bg-contain {
-  background-size: contain;
-}
-
-.bg-cover {
-  background-size: cover;
 }
 
 .px-7 {
@@ -801,50 +765,23 @@ video {
   color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
-.opacity-0 {
-  opacity: 0;
-}
-
 .opacity-10 {
   opacity: 0.1;
 }
 
-.hover\:flex:hover {
-  display: flex;
+/* make a variable to store cyan color with 50% opacity */
+
+:root {
+  --transparent-cyan: hsla(178, 100%, 50%, 0.50);
 }
 
-.hover\:cursor-pointer:hover {
-  cursor: pointer;
-}
+/* make image overlay visible on hovering its parent div */
 
-.hover\:bg-cyan:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(178 100% 50% / var(--tw-bg-opacity));
-}
-
-.hover\:bg-cyan\/50:hover {
-  background-color: hsl(178 100% 50% / 0.5);
+.img_container:hover .overlay {
+  display: block;
 }
 
 .hover\:text-cyan:hover {
   --tw-text-opacity: 1;
   color: hsl(178 100% 50% / var(--tw-text-opacity));
-}
-
-.hover\:opacity-100:hover {
-  opacity: 1;
-}
-
-.hover\:opacity-50:hover {
-  opacity: 0.5;
-}
-
-.hover\:opacity-40:hover {
-  opacity: 0.4;
-}
-
-@media (min-width: 768px) {
-  .md\:h-\[302px\] {
-    height: 302px;
-  }
 }
